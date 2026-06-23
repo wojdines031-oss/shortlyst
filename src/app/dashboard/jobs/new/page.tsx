@@ -9,7 +9,7 @@ export default function NewJobPage() {
   const [loading, setLoading] = useState(false)
   const [charCount, setCharCount] = useState(0)
 
-  async function handleSubmit(e) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     setLoading(true)
     setError(null)
