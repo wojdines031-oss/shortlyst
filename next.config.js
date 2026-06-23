@@ -9,6 +9,7 @@ const nextConfig = {
     experimental: {
       serverActions: true,
       serverComponentsExternalPackages: ['pdf-parse', 'mammoth'],
+      appDir: true,
     },
     webpack: (config, { isServer }) => {
       if (isServer) {
